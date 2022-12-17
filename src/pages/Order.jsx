@@ -16,7 +16,7 @@ const Order = () => {
   async function getOrder() {
 
     try {
-      const response = await fetch(`http://localhost:3000/order/${user?.id}`)
+      const response = await fetch(`https://shokumo-api.onrender.com/order/${user?.id}`)
       const data = await response.json()
       setOrders(data.reverse())
       console.log(data)

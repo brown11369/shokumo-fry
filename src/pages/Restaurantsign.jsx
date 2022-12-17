@@ -15,7 +15,7 @@ export default function Restaurantsign() {
     const navigate = useNavigate()
 
     const login = async () => {
-        const response = await fetch("http://localhost:3000/restaurant/login", {
+        const response = await fetch("https://shokumo-api.onrender.com/restaurant/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -37,7 +37,7 @@ export default function Restaurantsign() {
     }
 
     const logup = async () => {
-        const response = await fetch("http://localhost:3000/restaurant", {
+        const response = await fetch("https://shokumo-api.onrender.com/restaurant", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

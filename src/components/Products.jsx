@@ -11,7 +11,7 @@ function Products() {
 
 
     useEffect(() => {
-        fetch("http://localhost:3000/food/restaurant/" + hotel.id)
+        fetch("https://shokumo-api.onrender.com/food/restaurant/" + hotel.id)
             .then((response) => response.json())
             .then((data) => {
                 setFood(data)
@@ -23,7 +23,7 @@ function Products() {
     }, [])
 
     function delitem(id) {
-        fetch(`http://localhost:3000/food/${id}`, {
+        fetch(`https://shokumo-api.onrender.com/food/${id}`, {
             method: "DELETE"
         })
             .then((response) => response.json())
@@ -48,7 +48,7 @@ function Products() {
     }
 
     function updatefood(id) {
-        fetch(`http://localhost:3000/food/${id}`, {
+        fetch(`https://shokumo-api.onrender.com/food/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

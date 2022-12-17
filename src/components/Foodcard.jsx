@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 function Foodcard() {
     let [food, setFood] = useState()
     useEffect(() => {
-        fetch("http://localhost:3000/food/")
+        fetch("https://shokumo-api.onrender.com/food/")
             .then((response) => response.json())
             .then((data) => {
                 setFood(data)
@@ -19,7 +19,7 @@ function Foodcard() {
 
     const buy = async (foooid) => {
         cartData.foodid=foooid;
-        const response = await fetch("http://localhost:3000/cart/add", {
+        const response = await fetch("https://shokumo-api.onrender.com/cart/add", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

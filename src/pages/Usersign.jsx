@@ -11,7 +11,7 @@ export default function Usersign() {
 
     const navigate = useNavigate()
     const login = async () => {
-        const response = await fetch("http://localhost:3000/user/login", {
+        const response = await fetch("https://shokumo-api.onrender.com/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,7 +32,7 @@ export default function Usersign() {
     }
 
     const logup = async () => {
-        const response = await fetch("http://localhost:3000/user", {
+        const response = await fetch("https://shokumo-api.onrender.com/user", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

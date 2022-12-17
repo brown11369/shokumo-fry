@@ -4,7 +4,7 @@ export default function Add() {
     let FoodData = { restaurant: hotel.id };
 
     const sendData = async () => {
-        const response = await fetch("http://localhost:3000/food/create", {
+        const response = await fetch("https://shokumo-api.onrender.com/food/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

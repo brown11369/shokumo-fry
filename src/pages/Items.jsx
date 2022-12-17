@@ -6,7 +6,7 @@ const Items = ({curItem}) => {
 
   const delItem = async (id) => {
     try {
-        const response = await fetch(`http://localhost:3000/cart/remove/${id}`,{
+        const response = await fetch(`https://shokumo-api.onrender.com/cart/remove/${id}`,{
             method:"DELETE"
         })
         const data = await response.json()

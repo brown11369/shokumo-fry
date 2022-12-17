@@ -6,7 +6,7 @@ export default function RestOrder(){
     const [order,setOrder]=useState(null)
 
     useEffect(() => {
-        fetch(`http://localhost:3000/restaurant/orders/${hotel?.id}`)
+        fetch(`https://shokumo-api.onrender.com/restaurant/orders/${hotel?.id}`)
             .then((response) => response.json())
             .then((data) => {
                 setOrder(data)

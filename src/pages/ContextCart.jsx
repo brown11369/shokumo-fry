@@ -22,7 +22,7 @@ const ContextCart = () => {
 
   const cartItem = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/cart/${user?.id}`)
+      const response = await fetch(`https://shokumo-api.onrender.com/cart/${user?.id}`)
       const data = await response.json()
       addItem(data)
     }
@@ -38,7 +38,7 @@ const ContextCart = () => {
   async function handlePayment(order) {
     try {
       const stripe = await stripePromise;
-      let res = await fetch(`http://localhost:3000/create-checkout-session`, {
+      let res = await fetch(`https://shokumo-api.onrender.com/create-checkout-session`, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
