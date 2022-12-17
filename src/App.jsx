@@ -5,7 +5,7 @@ import Usersign from './pages/Usersign';
 import Restaurantsign from './pages/Restaurantsign';
 import Restaurants from './pages/Restaurants';
 import Dashboard from './pages/Dashboard';
-import Restrict from './components/restrict';
+import Restrict from './components/Restrict';
 import Overview from './components/Overview';
 import Add from './components/Add';
 import Action from './components/Action';
