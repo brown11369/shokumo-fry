@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-log{
+    background-color: #ededed;
+}
+.login, .regin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 50px 150px 50px;
+}
+
+.textinput{
+    font-size: 21px;
+    padding: 5px;
+    margin-block: 10px;
+    border-radius: 9px;
+    text-indent: 7px;
+}
+
+.log-button{
+    font-size: 19px;
+    padding: 7px 40px;
+}
